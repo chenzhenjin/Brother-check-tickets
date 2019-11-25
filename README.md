@@ -2,4 +2,4 @@
 - 主要功能查询12306的火车票和高铁票和模拟购票
 ### 开发中需要你一些api的接口申请
 - 替换你的极速数据的appkey 
-![appkey](./pic/极速appkey.jpg)
+![appkey](/pic/极速appkey.jpg)
