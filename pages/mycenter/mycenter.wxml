@@ -1,0 +1,85 @@
+<view class='topfirst'>
+  <view class='topsecond'>
+  <button wx:if="{{!hasUserInfo}}" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>获取头像昵称</button>
+  <block wx:else>
+    <image src='{{userInfo.avatarUrl}}' class='userimg'></image>
+  </block> 
+  </view>
+  <view class='topsecond'>
+    <view class='topthird'><text style='font-size:15px;'>{{userInfo.nickName}}</text></view>
+    <view class='topthird'><text>账号管理</text></view>
+  </view>
+  <view class='topsecond you'><image src='/img/icon/tiao.png' class='tiao'></image></view>
+</view>
+<view class='beijing'>
+  <view class='dingdan'>
+    <view class='dingdankuai'>
+      <image src='/img/tarbaricon/huocheqian.png'></image>
+      <view><text>火车票订票</text></view>
+    </view>
+    <view class='dingdankuai'  bindtap='qiangpiao'>
+      <image src='/img/icon/qiangpiao.png'></image>
+      <view ><text>抢票订单</text></view>
+    </view>
+    <view class='dingdankuai'>
+      <image src='/img/tarbaricon/feijiqian.png'></image>
+      <view><text>机票订单</text></view>
+    </view>
+    <view class='dingdankuai'>
+      <image src='/img/icon/dingdan.png'></image>
+      <view><text>全部订单</text></view>
+    </view>
+  </view>
+  <view class='xiangxilist'>
+    <view class='list'>
+      <view class='listkuai'><image src='/img/icon/caifu.png' class='listicon'></image></view>
+      <view class='listkuai'>
+        <view><text class='jiacu'>我的财富</text></view>
+        <view><text>0个加速币</text></view>
+      </view>
+      <view class='listkuai'><text>领取加速包</text></view>
+      <view class='listkuai'><image src='/img/icon/tiao.png' class='listtiao' ></image></view>
+    </view>
+    <view class='list'>
+      <view class='listkuai'><image src='/img/icon/chuxingfuwu.png' class='listicon'></image></view>
+      <view class='listkuai'>
+        <view><text class='jiacu'>出行服务</text></view>
+      </view>
+      <view class='listkuai'><text>正晚点/时刻表</text></view>
+      <view class='listkuai'><image src='/img/icon/tiao.png' class='listtiao' ></image></view>
+    </view>
+    <view class='list'>
+      <view class='listkuai'><image src='/img/icon/fenxiang.png' class='listicon'></image></view>
+      <view class='listkuai'>
+        <view><text class='jiacu'>邀请好友</text></view>
+      </view>
+      <view class='listkuai'><text>一起来抢票</text></view>
+      <view class='listkuai'><image src='/img/icon/tiao.png' class='listtiao' ></image></view>
+    </view>
+    <view class='list'>
+      <view class='listkuai'><image src='/img/icon/xiaoxi.png' class='listicon'></image></view>
+      <view class='listkuai'>
+        <view><text class='jiacu'>消息中心</text></view>
+      </view>
+      <view class='listkuai'><text>在线服务</text></view>
+      <view class='listkuai'><image src='/img/icon/tiao.png' class='listtiao' ></image></view>
+    </view>
+    <view class='list'>
+      <view class='listkuai'><image src='/img/icon/yijian.png' class='listicon'></image></view>
+      <view class='listkuai'>
+        <view><text class='jiacu'>产品意见</text></view>
+      </view>
+      <view class='listkuai'></view>
+      <view class='listkuai'><image src='/img/icon/tiao.png' class='listtiao' ></image></view>
+    </view>
+    <view class='list'>
+      <view class='listkuai'><image src='/img/icon/gengduo.png' class='listicon'></image></view>
+      <view class='listkuai'>
+        <view><text class='jiacu'>更多</text></view>
+      </view>
+      <view class='listkuai'></view>
+      <view class='listkuai'><image src='/img/icon/tiao.png' class='listtiao' ></image></view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,61 @@
+.nav-date{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+.nav-text{
+  width: 30%;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.chepianlistfisrt{
+  padding: 2% 0;
+  background-color: #f0f0f0;
+}
+.chepianlistsecond{
+  background-color: white;
+  margin: 0 auto;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+}
+.chepiaotop{
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.topkuaifirst{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: 1px solid red;
+}
+.topkuaisecond{
+  text-align: center;
+  border: 1px solid red;
+}
+.jiada{
+  font-size: 16px;
+}
+.hanggao{
+  line-height: 200%;
+}
+.chepiaobottom{
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px dashed red;
+}
+.bottomfirst{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 35%;
+}
+.bottomsecond{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 25%;
+}

@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/huoche/huoche",
+    "pages/feiji/feiji",
+    "pages/daba/daba",
+    "pages/mycenter/mycenter",
+    "pages/city/city",
+    "pages/chepiao/chepiao",
+    "pages/qiangpiao/qiangpiao"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "抢票来了",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/huoche/huoche",
+        "text": "火车票",
+        "iconPath": "./img/tarbaricon/huocheqian.png",
+        "selectedIconPath": "./img/tarbaricon/huochehou.png"
+      },
+      {
+        "pagePath": "pages/mycenter/mycenter",
+        "text": "个人中心",
+        "iconPath": "./img/tarbaricon/gerenqian.png",
+        "selectedIconPath": "./img/tarbaricon/gerenhou.png"
+      }
+    ]
+  }
+}

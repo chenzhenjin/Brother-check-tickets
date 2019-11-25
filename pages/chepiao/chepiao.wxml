@@ -1,0 +1,49 @@
+<view class='nav-date'>
+  <view class='nav-text'>
+    <text bindtap='beforedate'>前一天</text>
+  </view>
+  <view class='nav-text'>
+    <text>{{date}}</text>
+  </view>
+  <view class='nav-text'>
+    <text bindtap='afterdate'>后一天</text>
+  </view>
+</view>
+<block wx:for="{{chuliresult}}" wx:key="">
+<view class='chepianlistfisrt'>
+  <view class='chepianlistsecond'>
+    <view class='chepiaotop'>
+      <view class='topkuaifirst'>
+        <view class='topkuaisecond jiada' style='font-weight:bolder;'>
+        {{item.departuretime}}</view>
+        <view class='topkuaisecond hanggao'>{{item.station}}</view>
+      </view>
+      <view class='topkuaifirst'>
+        <view class='topkuaisecond hanggao' style='font-weight:bolder;'>{{item.trainno}}</view>
+        <view class='topkuaisecond hanggao'>{{item.costtime}}</view>
+      </view>
+      <view class='topkuaifirst'>
+        <view class='topkuaisecond jiada'>{{item.arrivaltime}}</view>
+        <view class='topkuaisecond hanggao'>{{item.endstation}}</view>
+      </view>
+      <view class='topkuaifirst'>
+        <view class='topkuaisecond hanggao'>￥<text class='jiada'>{{item.priceyz}}</text> </view>
+        <view class='topkuaisecond hanggao' data-id='{{index}}' bindtap='qiangpiao'>抢票</view>
+      </view>
+    </view>
+    <view wx:if="{{item.gaozuo}}" class='chepiaobottom'>
+        <view class='bottomfirst'>二等座({{item.gaozuo.numed}})</view>
+        <view class='bottomfirst'>一等座({{item.gaozuo.numyd}})</view>
+        <view class='bottomfirst'>商务座({{item.gaozuo.numsw}})</view>
+    </view>
+    <view wx:else class='chepiaobottom'>
+        <view class='bottomsecond'>硬座({{item.huozuo.numyz}})</view>
+        <view class='bottomsecond'>硬卧({{item.huozuo.numyw}})</view>
+        <view class='bottomsecond'>软卧({{item.huozuo.numrw}})</view>
+        <view class='bottomsecond'>高级软卧({{item.huozuo.numgr}})</view>
+    </view>
+  </view>
+</view>
+</block>
+
+

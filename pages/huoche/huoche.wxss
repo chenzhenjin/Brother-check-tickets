@@ -1,0 +1,135 @@
+input{
+  font-size: 25px;
+  /* border: 1px solid red;   */
+}
+.qiangpiaoqu{
+  border: 1px solid gray;
+  width: 90%;
+  margin: 0 auto;
+}
+.nav{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-title{
+  text-align: center;
+  width: 45%;
+  /* border: 1px solid red; */
+}
+.normal{
+   color: white;
+   background-color: black;
+}
+.qiehuan{
+  background-color: white;
+}
+.xuanzhanming{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 1px solid red; */
+  height: 50px;
+}
+.zhanming{
+  display: flex;
+  align-items: center;
+  width: 35%;
+  /* border: 1px solid red; */
+}
+.zuodi input:first-child{
+  margin-left: 10%;
+}
+/* 由于左右的input不在一个div里，所以不能用nth */
+.youdi input:first-child{
+  margin-left: 10%;
+}
+
+.shuaxin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  /* border: 1px solid red; */
+}
+.shuaxin image{
+  height: 70%;
+  width: 50%;
+}
+.xuanriqi{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  /* border: 1px solid red; */
+}
+.wairiqi{
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  width: 50%;
+  /* border: 1px solid red; */
+}
+.neiriqi{
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+}
+.wairiqi text{
+  font-size: 15px;
+}
+.wairiqi input:first-child{
+  width: 50%;
+  font-size: 15px;
+  margin-left: 5%;
+}
+.tiao{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  /* border: 1px solid red; */
+}
+.tiao image{
+  margin-left: 55%;
+  /* border: 1px solid red; */
+  height: 70%;
+  width: 20%;
+}
+.shuaixuan{
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dagou{
+  width: 50%;
+  /* border: 1px solid red; */
+}
+.dagou text{
+  font-size: 20px;
+  margin-left: 8%;
+}
+.dagou switch{
+  margin-left: 8%;
+}
+.dianji{
+  width:100%;
+  /* border: 1px solid red; */
+}
+.dianji button{
+  background-color: black;
+  width: 80%;
+  size: 15px;
+  color: white;
+}
+.jilu{
+  margin-top: 15px;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.jilu text{
+  font-size: 20px;
+  margin-left: 15px;
+}

@@ -1,0 +1,51 @@
+.waisousuo{
+  position: relative;
+  /* border: 1px solid red; */
+  width: 100%;
+  background-color:#f0f0f0;
+  z-index: 100;
+}
+.neisousuo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+}
+.neisousuo input{
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  /* border-color: red; */
+}
+.didian{
+  display: flex;
+  flex-direction: row;
+}
+.itemcity{
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 1px solid gainsboro;
+  font-size: 30px;
+}
+.shouzimu{
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 1px solid gainsboro;
+  font-size: 20px;
+}
+.youbian{
+  z-index: 1;
+  position: relative;
+  width:10%;
+  /* border: 1px solid red; */
+}
+.zuobian{
+  z-index: 1;
+  position: relative;
+  width: 90%;
+  /* border: 1px solid red; */
+}
+.zuoa-z{
+  font-size: 15px;
+}

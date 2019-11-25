@@ -1,0 +1,117 @@
+.topfirst{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  height: 50px;
+  padding-bottom: 5%;
+  /*可以调整盒子四周的边距 */
+  background-color:gray;
+}
+.topsecond{
+  color: white;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  /* 相反了 水平变垂直  垂直变水平*/
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 35%;
+}
+.topsecond:first-child{
+  margin-left: 10px;
+  width: 30%;
+}
+.topsecond button{
+  font-size: 12px;
+  /* 控制按钮字体  不是size width控制按钮宽度 */
+}
+.you{
+  margin-right: 15px;
+  align-items:flex-end; 
+}
+.userimg{
+  width: 80%;
+  height: 90%;
+  border-radius: 50%;
+}
+.tiao{
+  height: 50%;
+  width: 20%;
+}
+.beijing{
+  background-color: #f0f0f0;
+}
+.dingdan{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 65px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  border-radius: 10%;
+  position: relative;
+  /* 可脱离文档，不受最底部背景色影响,top取值不能向上了 */
+  top: -10px;
+}
+.dingdankuai{
+  width: 25%;
+  height: 100%;
+  font-size: 15px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.dingdankuai image{
+  width: 50%;
+  height: 50%;
+} 
+.xiangxilist{
+  
+}
+.list{
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.list:first-child{
+  margin-bottom:3%;
+}
+.listkuai{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  font-size: 15px;
+  /* border: 1px solid red; */
+}
+.listkuai:first-child{
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+.listicon{
+  width: 50%;
+  height: 50%;
+}
+.listkuai:nth-child(2){
+  justify-content: center;
+}
+.jiacu{
+  font-weight: bolder;
+}
+.listkuai:nth-child(3){
+  justify-content: center;
+  align-items: flex-end;
+}
+.listkuai:last-child{
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.listtiao{
+  width: 50%;
+  height: 50%;
+}

@@ -1,0 +1,22 @@
+<view class='waisousuo' style='top:{{youtop}}'>
+  <view class='neisousuo' >
+    <input type='text'  placeholder='北京/bj/beijing' bindinput='inputsearch' value='{{inputvalue}}'></input>
+    <icon type='cancel' bindtap='quxiao'></icon>
+  </view>
+</view>
+<view class='didian' id='ceshi'>
+  <view class='zuobian'>
+    <view wx:for="{{citysresult}}" wx:key="">
+      <view wx:if="{{item.cityPinYin.length>1}}" class="itemcity" data-cityname="{{item.cityName}}" bindtap="cityselect" >{{item.cityName}}</view>
+      <view wx:else class='shouzimu' data-cityname="{{item.cityName}}">{{item.cityName}}</view>
+    </view>
+  </view>
+  <view class='youbian' style='top:{{youtop}}'>
+    <view wx:for="{{cityAZ}}" wx:key="">
+      <view class='zuoa-z' bindtap='bindaz' data-id='{{item.cityName}}'>{{item.cityName}}</view>
+    </view>
+    <view  bindtap='backtop'>
+      <text style='font-size:15px;'>回到顶部</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<view class='qiangtopfirst'>
+  <view class='qiangtopsecond'>
+    <view class='qiangtopthird'>攻略</view>
+    <view class='qiangtopthird'><text>抢票成功后，会以微信公众号推送提醒您，请收到后及时查看</text></view>
+    <view class='qiangtopthird'><image src='/img/icon/tiao.png' class='qiangimg'></image></view>
+  </view>
+</view>
+<block wx:for="{{dingdan}}" wx:key="">
+<view class='gedan'>
+  <view class='diangdanfirst'>
+    <view class='diangdansecond'>
+      <view class='diangdanthird'>
+        <text class='dingdanfourth'>{{item.startion}}</text>
+        <text class='dingdanfourth'>{{item.trainno}}</text>
+        <text class='dingdanfourth'>{{item.endstation}}</text>
+      </view>
+      <view class='diangdanthird'>
+        <text class='dingdanfourth riqi'>{{item.date}}</text>
+        <text class='dingdanfourth'>{{item.departuretime}}</text>
+        <text class='dingdanfourth'>{{item.arrivaltime}}</text>
+      </view>
+      <view class='diangdanthird'>
+        <text wx:if="{{item.shakedown}}" class='duiqi'>正在抢票</text>
+        <text wx:else class='duiqi'>已取消</text>
+      </view>
+    </view>
+    <view class='diangdansecond'>
+      <view><icon type='waiting' size="30"></icon></view>
+      <view><icon type='cancel'  size="30" bindtap='qiangcancel' data-itemid='{{item._id}}' id='{{index}}'></icon></view>
+    </view>
+  </view>
+</view>
+</block>
+

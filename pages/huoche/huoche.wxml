@@ -1,0 +1,64 @@
+<view>
+  <swiper interval='{{swiper.interval}}' duration='{{swiper.duration}}' autoplay='{{swiper.autoplay}}' indicator-dots='{{swiper.indicatordots}}' style='height:{{swiperheight}};'>
+    <block wx:for="{{swiper.imgurls}}" wx:key="">
+      <swiper-item>
+        <image src='{{item}}' style='height:{{swiperheight}};width:100%;'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='qiangpiaoqu' style='height:{{qiangheight}}'>
+  <view class='nav'>
+    <view class="nav-title {{id==0?'qiehuan':'normal'}}" id='0' bindtap='qiehuannav'>
+      <text>火车票</text>
+      <!-- 类名要在''里面,外面再加"" -->
+    </view>
+    <view class="nav-title {{id==1?'qiehuan':'normal'}}" id='1' bindtap='qiehuannav'>
+      <text >飞机票</text>
+    </view>
+  </view>
+  <form bindsubmit='formsubmit'>
+    <view class='xuanzhanming'>
+      <view class='zhanming zuodi' >
+        <input type='text'  cursor-spacing='5' name="startstation" value='{{start}}' bindtap='xuancitystart'></input>
+      </view>
+      <view class='shuaxin'>
+        <image src='/img/icon/shuaxin.png'></image>
+      </view>
+      <view class='zhanming youdi'>
+        <input type='text'  cursor-spacing='5' name="endstation" value='{{end}}' bindtap='xuancityend'></input>
+      </view>
+    </view>
+    <view class='xuanriqi'>
+      <view class='wairiqi'>
+        <picker mode="date"  start="{{datetemp}}" end="{{enddate}}" bindchange='riqichange'>
+          <view class='neiriqi'>
+            <input type='text' name="date" value="{{startdate}}"></input><text>明天出发</text>
+          </view>
+        </picker> 
+      </view>
+      <view class='tiao'>
+        <image src='/img/icon/tiao.png'></image>
+      </view>
+    </view>
+    <view class='shuaixuan'>
+      <view class='dagou'>
+        <text>高铁动车</text>
+        <switch type='switch' name="gaotie" ></switch>
+      </view>
+      <view class='dagou'>
+        <text>学生票</text>
+        <switch type='switch'></switch>
+      </view>
+    </view>
+    <view class='dianji'>
+      <button form-type='submit'>查询</button>
+    </view>
+  </form>
+ 
+  <view class='jilu'>
+    <block wx:for="{{jilu}}" wx:key="">
+      <text>{{item}}</text>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,82 @@
+.qiangtopfirst{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+  height: 100px;
+}
+.qiangtopsecond{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 70%;
+  background-color: white;
+}
+.qiangtopthird:nth-child(2){
+  font-size: 15px;
+  width: 80%;
+  /* border: 1px solid red; */
+}
+.qiangtopthird:first-child{
+  text-align: center;
+  width: 10%;
+  /* border: 1px solid red; */
+}
+.qiangtopthird:last-child{
+  width: 10%;
+  height: 30%;
+}
+.qiangimg{
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 100%;
+}
+.gedan{
+  display: flex;
+  align-items: center;
+  padding-top: 3%;
+  background-color: #f0f0f0;
+}
+.diangdanfirst{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 95%;
+  height: 80%;
+  background-color: white;
+}
+.diangdansecond:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 85%;
+}
+.diangdansecond:last-child{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+.diangdanthird{
+  /* border: 1px solid red; */
+  width: 95%;
+  height: 30%;
+  display: flex;
+}
+.dingdanfourth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 25%;
+}
+.riqi{
+  width: 40%;
+}
+.duiqi{
+  margin-left: 5%;
+}
