@@ -10,7 +10,7 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "white",
+    "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTitleText": "抢票来了",
     "navigationBarTextStyle": "black"
   },
