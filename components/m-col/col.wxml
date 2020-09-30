@@ -1,0 +1,4 @@
+<!--componets/m-col/col.wxml-->
+<view class="m-col">
+  <slot></slot>
+</view>

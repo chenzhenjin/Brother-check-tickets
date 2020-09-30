@@ -1,0 +1,4 @@
+/* componets/m-col/col.wxss */
+.m-col{
+  float: left;
+}

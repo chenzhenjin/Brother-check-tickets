@@ -1,0 +1,4 @@
+<!--componets/m-row/row.wxml-->
+<view class="m-row">
+  <slot></slot>
+</view>

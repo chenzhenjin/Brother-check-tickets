@@ -133,3 +133,8 @@ input{
   font-size: 20px;
   margin-left: 15px;
 }
+
+.col-right{
+  margin-left: 10px;
+  margin-right: 10px;
+}

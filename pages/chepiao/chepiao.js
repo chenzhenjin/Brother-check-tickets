@@ -47,6 +47,22 @@ Page({
       title: this.data.start + '-' + this.data.end,
     })
     var url = "https://api.jisuapi.com/train/ticket?appkey=741f4e368288488a&start=" + this.data.start + "&end=" + this.data.end + "&date=" + date;
+    // var chuliresult = [];
+    // var temp = {
+    //   station: "广州南",
+    //   endstation: "北京西",
+    //   departuretime: "07:47",
+    //   costtime: "10小时35分",
+    //   trainno: "G72",
+    //   type: "G",
+    //   arrivaltime: "18:22",
+    //   priceyz: "11",
+    // }
+    // chuliresult.push(temp)
+    // that.setData({
+    //   chuliresult: chuliresult
+    // })
+    // return ;
     wx.request({
       url: url,
       header: {
@@ -77,18 +93,18 @@ Page({
               }
               var piaotype = "huozuo";
             }
-            var strs = piao.costtime.split(":");
-            var newstrs = strs[0] + "小时" + strs[1] + "分";
+            // var strs = piao.costtime.split(":");
+            // var newstrs = strs[0] + "小时" + strs[1] + "分";
             var temp = {
               station: piao.station,
               endstation: piao.endstation,
               departuretime: piao.departuretime,
-              costtime: newstrs,
+              costtime: piao.costtime,
               trainno: piao.trainno,
               type: piao.type,
               [piaotype]: piaotemp,
               arrivaltime: piao.arrivaltime,
-              priceyz: piao.priceyz || piao.priceed,
+              priceyz: piao.priceyz === '-' ? piao.priceed : piao.priceyz,
             }
             chuliresult.push(temp)
           }
@@ -104,9 +120,10 @@ Page({
     })
   },
   beforedate:function(){
-    var beforedate=this.data.date.split('-');
-    console.log(beforedate[2] - 1)
-    var newdate = beforedate[0] +"-"+ beforedate[1]+"-"+(beforedate[2]-1);
+    // var beforedate=this.data.date.split('-');
+    // console.log(beforedate[2] - 1)
+    // var newdate = beforedate[0] +"-"+ beforedate[1]+"-"+(beforedate[2]-1);
+    var newdate = new Date(new Date(this.data.date).getTime() - 1000 * 3600 *24).toLocaleDateString().replace(/\//g,'-')
     this.setData({
       date: newdate
     })
@@ -114,9 +131,10 @@ Page({
     console.log(newdate);
   },
   afterdate:function(){
-    var afterdate = this.data.date.split('-');
-    var ri = parseInt(afterdate[2]) + 1;
-    var newdate = afterdate[0] + "-" + afterdate[1] + "-" + ri;
+    // var afterdate = this.data.date.split('-');
+    // var ri = parseInt(afterdate[2]) + 1;
+    // var newdate = afterdate[0] + "-" + afterdate[1] + "-" + ri;
+    var newdate = new Date(new Date(this.data.date).getTime() + 1000 * 3600 *24).toLocaleDateString().replace(/\//g,'-')
     this.setData({
       date: newdate
     })

@@ -20,7 +20,7 @@
       </view>
       <view class='topkuaifirst'>
         <view class='topkuaisecond hanggao' style='font-weight:bolder;'>{{item.trainno}}</view>
-        <view class='topkuaisecond hanggao'>{{item.costtime}}</view>
+        <view class='topkuaisecond hanggao' style="font-size: 12px;">{{item.costtime}}</view>
       </view>
       <view class='topkuaifirst'>
         <view class='topkuaisecond jiada'>{{item.arrivaltime}}</view>

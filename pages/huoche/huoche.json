@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "m-row": "/components/m-row/row",
+    "m-col": "/components/m-col/col"
+  }
 }
