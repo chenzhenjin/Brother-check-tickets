@@ -24,9 +24,8 @@ Page({
   onLoad: function (options) {
     var date = util.formatTime(new Date());
     var datetemp=date.map(this.formatNumber).join('-');
-    var yearEnd = date[1] + 3 > 12 ? date[0] + 1 : date[0];
-    var monthEnd = date[1] + 3 > 12 ? date[1] + 3 - 12 : date[1];
-    var enddate = [yearEnd, monthEnd , 1].map(this.formatNumber).join('-');
+    var endDateArray = util.formatTime(new Date(new Date().getTime() + 3600 * 24 * 60 * 1000));
+    var enddate = endDateArray.map(this.formatNumber).join('-');
     console.log(datetemp);
     console.log(enddate);
     var that=this;
